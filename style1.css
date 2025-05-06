@@ -1,0 +1,204 @@
+/* Import Clean Font */
+body {
+    font-family: 'Inter', sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    height: 100%;
+    text-align: center;
+    margin: 0;
+
+    /* Background Image */
+    background-image: url('abhhhh.png'); /* Change this to your actual image path */
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+/* Background Video */
+
+
+/* Light Overlay for Readability */
+body::before {
+    content: "";
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(255, 255, 255, 0.2); /* Light overlay */
+    z-index: -1;
+}
+
+/* Light Overlay for Better Readability */
+body::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(255, 255, 255, 0.2);
+    z-index: -1;
+}
+
+/* Less Translucent Header */
+.small-header {
+    background-color: rgba(0, 0, 0, 0.6); /* Less translucent */
+    color: white;
+    width: 100%;
+    text-align: center;
+    padding: 12px 0;
+    font-size: 18px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    backdrop-filter: blur(4px);
+}
+
+/* Tech Vitals Title in Header */
+.small-header h1 {
+    font-size:45 px; /* Increased size */
+    font-weight: 700; /* Bolder for better readability */
+    margin: 0;
+    color:rgb(243, 250, 249);
+}
+
+/* Landing Page */
+.landing-page {
+    background-color: rgba(255, 255, 255, 0.9);
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 900px;
+    margin-top: 80px;
+    margin-bottom: 30px;
+}
+
+/* Heading and Paragraph Styling */
+h1 {
+    font-size: 40px;
+    color: #0a6048;
+    margin-bottom: 10px;
+}
+
+h2 {
+    font-size: 28px;
+    color: #0a6048;
+    margin-bottom: 10px;
+}
+
+p {
+    font-size: 18px;
+    color: #666;
+    margin-bottom: 20px;
+    font-weight: bold;
+}
+
+/* Role Selection Buttons */
+/* Role Selection Buttons */
+.role-selection button {
+    background-color: #0a6048; /* Same as other elements */
+    border: none;
+    padding: 12px 25px;
+    font-size: 16px;
+    margin: 10px;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+/* Remove underline from links inside buttons */
+.role-selection button a {
+    text-decoration: none; 
+    color: white; /* White text like other buttons */
+    font-weight: bold;
+    font-size: 16px;
+    display: block;
+}
+
+/* Hover effect */
+.role-selection button:hover {
+    background-color: #08503c; /* Slightly darker green */
+}
+
+
+/* About Us Section */
+.about-us {
+    background-color: rgba(255, 255, 255, 0.9);
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 900px;
+    margin-bottom: 30px;
+}
+
+/* Smaller, Lighter About Us Font */
+.about-us p {
+    font-size: 14px;
+    color: #333;
+    line-height: 1.5;
+    font-weight: 300;
+    text-align: justify;
+}
+
+/* Apply Flexbox to Keep Footer at Bottom */
+html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+}
+
+/* Main Content - Pushes Footer Down */
+.landing-page, .about-us {
+    flex: 1;
+}
+
+/* Compact Footer */
+footer {
+    padding: 10px;
+    background-color: rgba(20, 20, 20, 0.85); /* Darker but still slightly translucent */
+    color: white;
+    width: 100%;
+    text-align: center;
+    font-size: 12px;
+    position: relative;
+    bottom: 0;
+    left: 0;
+}
+
+/* Footer Links - Smaller & More Organized */
+.footer-links {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    flex-wrap: wrap;
+    margin-bottom: 5px;
+}
+
+.footer-links a {
+    color: #f4f4f4;
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: 400;
+    transition: color 0.3s ease;
+}
+
+.footer-links a:hover {
+    color: #4CAF50; /* Green hover effect */
+}
+
+/* Copyright Text */
+footer p {
+    margin: 5px 0;
+    font-size: 12px;
+    color: #bbb;
+}
+
